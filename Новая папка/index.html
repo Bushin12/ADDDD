@@ -7,13 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div id="container">
 	<h2> Палитра цветов</h2>
-	<div class="palitra"></div>
+	<div class="palitra" id="palitra"></div>
 	<h3> Добавлять свет</h3>
 
 	<form id="form-palitra">
 		<label for='name'> Название </label>
 		<input type="text" id="name">
+		<p class="error" id="nameError"> Error</p>
 		<label for='type'>Тип</label>
 		<select id="type">
 			<option value="rgb"> RGB </option>
@@ -22,27 +24,32 @@
 		</select>
 		<label for="code"> Код </label>
 		<input type="text" id="code">
-		<button> Save</button>
+		<p class ="error" id="codeError"> CodeError</p>
+		<button class = "button"> Save</button>
 	</form>
- <!-- <form id= "test">
+ </div>
+ <script type="text/javascript" src="script.js"> </script>
+</body>
+</html>
+
+<!-- <form id= "test">
  	<input type="test" name="name" id="name">
  	<button tupe="submit"> Send </button> 	
  </form> -->
 
- <script type="text/javascript" src="script.js">
- 	// let form = document.getElementById('test');
- 	// form.addEventListener('submit', checkForm)
+ 	<!-- // let form = document.getElementById('test');
+ 	form.addEventListener('submit', checkForm)
 
- 	// function checkForm(event)
- 	// {
- 	// 	event.preventDefault();
- 	// 	alert('отправка прервана'); 
- 	// 	let name = document.getElementById('name').value.trim();
- 	// 	if(nameTex.Length >0)
- 	// 	{
- 	// 		form.submit();
-  	// 	}
-  	// 	else 
+ 	function checkForm(event)
+ 	{
+ 	event.preventDefault();
+ 	alert('отправка прервана'); 
+ 	let name = document.getElementById('name').value.trim();
+ 	if(nameTex.Length >0)
+ 	{
+ 	 		form.submit();
+  	 	}
+  	 	else 
   	// 	{
   	// 		alert.('Empty')
   	// 	}
@@ -58,7 +65,4 @@
   	 // {
   	 // 	alert('wrong');
   	 // }
-
- </script>
-</body>
-</html>
+ -->
